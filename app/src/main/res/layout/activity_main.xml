@@ -7,60 +7,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:background="@color/primaryColor"
-        android:layout_width="match_parent"
-        android:layout_height="105dp">
-        <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/primaryColor"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/ic_back_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/txtTitle"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"
-                android:text="Hotels near you"
-                android:textStyle="bold"
-                android:textColor="@color/primaryTextColor"
-                android:layout_centerHorizontal="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:text="27 Aug 2020, 1 Night(s), 1 Romm(s)"
-                android:textStyle="italic"
-                android:textColor="@color/primaryTextColor"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/txtTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:text="CHANGE"
-                android:textSize="13dp"
-                android:layout_marginRight="15dp"
-                android:textColor="@color/primaryTextColor"
-                android:textStyle="bold"
-                android:layout_marginTop="28dp"
-                android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <androidx.recyclerview.widget.RecyclerView
-                tools:listitem="@layout/layout_listitem_btnoptions"
-                android:id="@+id/recyclerbtnOptions"
-                android:layout_marginLeft="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_alignParentBottom="true"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:orientation="horizontal"
+            android:layout_height="105dp">
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-    </androidx.appcompat.widget.Toolbar>
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Hotels near you"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="27 Aug 2020, 1 Night(s), 1 Romm(s)"
+                    android:textStyle="italic"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="CHANGE"
+                    android:textSize="13dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold"
+                    android:layout_marginTop="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    tools:listitem="@layout/layout_listitem_btnoptions"
+                    android:id="@+id/recyclerbtnOptions"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:background="@color/secondaryColor"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width=""
+                    android:layout_height=""
+            </RelativeLayout>
+        </LinearLayout>
 
-
+    </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
